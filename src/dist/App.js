@@ -49,8 +49,18 @@ var App = function () {
     var _f = react_1.useState(true), gameOver = _f[0], setGameOver = _f[1];
     console.log(API_1.fetchQuizQuestions(TOTAL_QUESTIONS, API_2.Difficulty.EASY));
     var startGame = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var newQuestions;
         return __generator(this, function (_a) {
-            return [2 /*return*/];
+            switch (_a.label) {
+                case 0:
+                    setLoading(true);
+                    setGameOver(false);
+                    return [4 /*yield*/, API_1.fetchQuizQuestions(TOTAL_QUESTIONS, API_2.Difficulty.EASY)];
+                case 1:
+                    newQuestions = _a.sent();
+                    setQuestions(newQuestions);
+                    return [2 /*return*/];
+            }
         });
     }); };
     var checkAnswer = function (e) {
