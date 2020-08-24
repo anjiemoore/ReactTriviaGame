@@ -55,14 +55,16 @@ const App = () => {
       <button className="start" onClick={startGame}>Start</button>) : null}
       {!gameOver ? <h3 className="Score">Score: </h3> : null}
       {loading && <h3>Loading Question</h3>}
-      {/* <QuestionCard
+      {!loading && !gameOver && (
+        <QuestionCard
         questionNum={number + 1}
         totalQuestions={TOTAL_QUESTIONS}
         question={questions[number].question}
         answers={questions[number].answers}
         userAnswer={userAnswers ? userAnswers[number] : undefined}
         callback={checkAnswer}
-      /> */}
+      />
+      )}
       <button className="next" onClick={nextQuestion}>Next Question</button>
       </div>
   );
