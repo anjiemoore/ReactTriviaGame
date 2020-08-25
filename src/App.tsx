@@ -33,7 +33,7 @@ const App = () => {
 
     const newQuestions = await fetchQuizQuestions(
       TOTAL_QUESTIONS,
-      Difficulty.EASY
+      Difficulty.MEDIUM
     );
 
     setQuestions(newQuestions);
