@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import QuestionCard from './components/QuestionCard';
 import { fetchQuizQuestions } from './API';
-import { QuestionState, Difficulty } from './API';
+import { QuestionsState, Difficulty } from './API';
 
-type AnswerObject = {
+export type AnswerObject = {
   question: string;
   answer: string;
   correct: boolean;
@@ -16,7 +16,7 @@ const TOTAL_QUESTIONS = 10;
 const App = () => {
 
   const [loading, setLoading] = useState(false);
-  const [questions, setQuestions] = useState<QuestionState[]>([]);
+  const [questions, setQuestions] = useState<QuestionsState[]>([]);
   const [number, setNumber] = useState(0);
   const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([]);
   const [score, setScore] = useState(0);
@@ -71,7 +71,7 @@ const App = () => {
       <h1>Trivia Game</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
       <button className="start" onClick={startGame}>Start</button>) : null}
-      {!gameOver ? <h3 className="Score">Score: </h3> : null}
+      {!gameOver ? <h3 className="Score">Score: {score}</h3> : null}
       {loading && <h3>Loading Question</h3>}
       {!loading && !gameOver && (
         <QuestionCard
