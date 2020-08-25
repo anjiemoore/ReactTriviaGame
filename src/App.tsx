@@ -3,6 +3,8 @@ import QuestionCard from './components/QuestionCard';
 import { fetchQuizQuestions } from './API';
 import { QuestionsState, Difficulty } from './API';
 
+import { Style } from './App.styles';
+
 export type AnswerObject = {
   question: string;
   answer: string;
@@ -67,6 +69,8 @@ const App = () => {
   }
   
   return (
+    <>
+    <Style />
     <div className="App">
       <h1>Trivia Game</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
@@ -87,6 +91,7 @@ const App = () => {
       <button className="next" onClick={nextQuestion}>Next Question</button>
       ) : null}
       </div>
+      </>
   );
 }
 
