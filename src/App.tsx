@@ -4,6 +4,7 @@ import { fetchQuizQuestions } from './API';
 import { QuestionsState, Difficulty } from './API';
 
 import { Style } from './App.styles';
+import { Wrapper } from './App.styles';
 
 export type AnswerObject = {
   question: string;
@@ -71,7 +72,7 @@ const App = () => {
   return (
     <>
     <Style />
-    <div className="App">
+    <Wrapper>
       <h1>Trivia Game</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
       <button className="start" onClick={startGame}>Start</button>) : null}
@@ -90,7 +91,7 @@ const App = () => {
       {!gameOver && !loading && userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1 ? (
       <button className="next" onClick={nextQuestion}>Next Question</button>
       ) : null}
-      </div>
+      </Wrapper>
       </>
   );
 }
