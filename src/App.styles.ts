@@ -34,6 +34,7 @@ export const Wrapper = styled.div`
     color: #fff;
     font-size: 2rem;
     margin: 0;
+    padding-bottom: 10px;
 }
 
 h1 {
@@ -63,7 +64,13 @@ h1 {
     padding: 0 40px;
 }
 
-.start {
-    max-width: 200px;
+.easy {
+    background: linear-gradient(180deg, #56ffa4, #59bc86);
+    border: 2px solid #d38558;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 40px;
+    margin: 20px 0;
+    padding: 0 40px;
 }
 `
