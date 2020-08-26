@@ -66,7 +66,27 @@ h1 {
 
 .easy {
     background: linear-gradient(180deg, #56ffa4, #59bc86);
-    border: 2px solid #d38558;
+    border: 2px solid #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 40px;
+    margin: 20px ;
+    padding: 0 40px;
+}
+
+.med {
+    background: linear-gradient(180deg, #faa51a, #f47a20);
+    border: 2px solid #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 40px;
+    margin: 20px 0;
+    padding: 0 40px;
+}
+
+.hard {
+    background: linear-gradient(180deg, #faa51a, #f47a20);
+    border: 2px solid #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 40px;
@@ -74,3 +94,25 @@ h1 {
     padding: 0 40px;
 }
 `
+
+export const DifficultyButtons = styled.div`
+    transition: all 0.3s ease;
+    
+    :hover {
+        opacity: 0.8;
+    }
+
+    button {
+        cursor: pointer;
+        user-select: none;
+        font-size: 0.8rem;
+        width: 100%;
+        height: 40px;
+        margin: 5px 0;
+        border: 3px solid #fff;
+        box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        color: #fff;
+        text-shadow: 0px, 1px, 0px rgba(0, 0, 0, 0.25)
+    }
+`;
