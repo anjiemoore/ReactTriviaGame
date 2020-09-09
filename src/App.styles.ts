@@ -35,6 +35,7 @@ export const Wrapper = styled.div`
     font-size: 2rem;
     margin: 0;
     padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 h1 {
@@ -94,29 +95,8 @@ h1 {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 40px;
-    margin: 0;
+    margin: 0px 20px;
     padding: 0 40px;
     font-size: 18px;
 }
 `
-
-export const DifficultyButtons = styled.div`
-    transition: all 0.3s ease;
-    
-    :hover {
-        opacity: 0.8;
-    }
-
-    button {
-        cursor: pointer;
-        user-select: none;
-        font-size: 0.8rem;
-        height: 40px;
-        margin: 5px 20px;
-        border: 3px solid #fff;
-        box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        color: #fff;
-        text-shadow: 0px, 1px, 0px rgba(0, 0, 0, 0.25)
-    }
-`;

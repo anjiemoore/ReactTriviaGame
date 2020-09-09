@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
     p {
         font-size: 1rem;
-    }    
+    }  
 `
 
 type ButtonWrapperProps = {
