@@ -53,7 +53,7 @@ h1 {
     margin: 20px;
 }
 
-.next {
+.start, .next {
     cursor: pointer;
     background: linear-gradient(180deg, #fff, #ffcc91);
     border: 2px solid #d38558;
@@ -111,7 +111,6 @@ export const DifficultyButtons = styled.div`
         cursor: pointer;
         user-select: none;
         font-size: 0.8rem;
-        width: 100%;
         height: 40px;
         margin: 5px 20px;
         border: 3px solid #fff;
