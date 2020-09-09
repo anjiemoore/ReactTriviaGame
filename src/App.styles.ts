@@ -52,6 +52,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     margin: 20px;
+    border-bottom: 30px;
 }
 
 .start, .next {
@@ -75,7 +76,7 @@ h1 {
     padding: 0 40px;
     color: #fff;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .med {
@@ -86,7 +87,9 @@ h1 {
     height: 40px;
     margin: 0px 20px;
     padding: 0 40px;
-    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .hard {
@@ -97,6 +100,8 @@ h1 {
     height: 40px;
     margin: 0px 20px;
     padding: 0 40px;
-    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
 }
 `
