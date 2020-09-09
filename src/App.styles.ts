@@ -53,7 +53,7 @@ h1 {
     margin: 20px;
 }
 
-.start, .next {
+.next {
     cursor: pointer;
     background: linear-gradient(180deg, #fff, #ffcc91);
     border: 2px solid #d38558;
@@ -74,6 +74,7 @@ h1 {
     padding: 0 40px;
     color: #fff;
     font-weight: 500;
+    font-size: 18px;
 }
 
 .med {
@@ -84,6 +85,7 @@ h1 {
     height: 40px;
     margin: 0px 20px;
     padding: 0 40px;
+    font-size: 18px;
 }
 
 .hard {
@@ -94,6 +96,7 @@ h1 {
     height: 40px;
     margin: 0;
     padding: 0 40px;
+    font-size: 18px;
 }
 `
 
