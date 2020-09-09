@@ -55,6 +55,10 @@ h1 {
     border-bottom: 30px;
 }
 
+div {
+    border-top: 100px;
+}
+
 .start, .next {
     cursor: pointer;
     background: linear-gradient(180deg, #fff, #ffcc91);
