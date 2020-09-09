@@ -70,27 +70,29 @@ h1 {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 40px;
-    margin: 20px ;
+    margin: 0px 20px;
     padding: 0 40px;
+    color: #fff;
+    font-weight: 500;
 }
 
 .med {
-    background: linear-gradient(180deg, #faa51a, #f47a20);
+    background: linear-gradient(180deg, #ffa84c, #ff7b0d);
     border: 2px solid #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 40px;
-    margin: 20px 0;
+    margin: 0px 20px;
     padding: 0 40px;
 }
 
 .hard {
-    background: linear-gradient(180deg, #faa51a, #f47a20);
+    background: linear-gradient(180deg, #ff3019, #cf0404);
     border: 2px solid #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 40px;
-    margin: 20px 0;
+    margin: 0;
     padding: 0 40px;
 }
 `
@@ -108,7 +110,7 @@ export const DifficultyButtons = styled.div`
         font-size: 0.8rem;
         width: 100%;
         height: 40px;
-        margin: 5px 0;
+        margin: 5px 20px;
         border: 3px solid #fff;
         box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
         border-radius: 10px;

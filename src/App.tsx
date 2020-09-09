@@ -5,6 +5,7 @@ import { QuestionsState, Difficulty } from './API';
 
 import { Style } from './App.styles';
 import { Wrapper } from './App.styles';
+import { DifficultyButtons } from './App.styles'
 
 export type AnswerObject = {
   question: string;
@@ -75,10 +76,10 @@ const App = () => {
     <Wrapper>
       <h1>Trivia Game</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
-        <div>
+        <DifficultyButtons>
         <button className="start easy" onClick={() => startGame(Difficulty.EASY)}>Easy</button>
         <button className="start med" onClick={() => startGame(Difficulty.MEDIUM)}>Medium</button>
-        <button className="start hard" onClick={() =>startGame(Difficulty.HARD)}>Hard</button></div>) : null}
+        <button className="start hard" onClick={() =>startGame(Difficulty.HARD)}>Hard</button></DifficultyButtons>) : null}
       {!gameOver ? <h3 className="score">Score: {score}</h3> : null}
       {loading && <h3>Loading Question</h3>}
       {!loading && !gameOver && (
